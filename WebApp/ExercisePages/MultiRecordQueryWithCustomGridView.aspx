@@ -11,45 +11,46 @@
         <br />
         <asp:GridView ID="List02" runat="server" 
             AutoGenerateColumns="False"
-             CssClass="table table-striped" GridLines="Horizontal"
-             BorderStyle="None" AllowPaging="True" OnPageIndexChanging="List02_PageIndexChanging" PageSize="5" OnSelectedIndexChanged="List02_SelectedIndexChanged">
+            CssClass="table table-striped" GridLines="Horizontal"
+            BorderStyle="None" AllowPaging="True"
+            OnPageIndexChanging="List02_PageIndexChanging" PageSize="5"
+            OnSelectedIndexChanged="List02_SelectedIndexChanged">
 
             <Columns>
                 <asp:CommandField SelectText="View" ShowSelectButton="True" 
-                    ButtonType="Button" CausesValidation="false"></asp:CommandField>
+                    ButtonType="Button" CausesValidation="false">
+                </asp:CommandField>
                 <asp:TemplateField HeaderText="ID" Visible="True">
                     <ItemStyle HorizontalAlign="Left"></ItemStyle>
                     <ItemTemplate>
                         <asp:Label ID="ProductID" runat="server" 
-                            Text='<%# Eval("ProductID") %>'></asp:Label>
-                        
+                            Text='<%# Eval("ProductID") %>'>
+                        </asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Product">
                     <ItemStyle HorizontalAlign="Left"></ItemStyle>
                     <ItemTemplate>
-                        <%-- this is where your reference to the data on your
-                              record is placed--%>
                         <asp:Label ID="ProductName" runat="server" 
-                            Text='<%# Eval("ProductName") %>'></asp:Label>
+                            Text='<%# Eval("ProductName") %>'>
+                        </asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Qty/Per">
                     <ItemStyle HorizontalAlign="Left"></ItemStyle>
                      <ItemTemplate>
                         <asp:Label ID="QuantityPerUnit" runat="server" 
-                            Text='<%# Eval("QuantityPerUnit") == null ? "each" : Eval("QuantityPerUnit") %>'></asp:Label>
-                        
+                            Text='<%# Eval("QuantityPerUnit") == null ? "each" : Eval("QuantityPerUnit") %>'>
+                        </asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Price ($)">
                     <HeaderStyle HorizontalAlign="Right"></HeaderStyle>
-
                     <ItemStyle HorizontalAlign="Left"></ItemStyle>
                      <ItemTemplate>
                         <asp:Label ID="UnitPrice" runat="server" 
-                            Text='<%# string.Format("{0:0.00}",Eval("UnitPrice"))%>'></asp:Label>
-                        
+                            Text='<%# string.Format("{0:0.00}",Eval("UnitPrice"))%>'>
+                        </asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Disc">
@@ -61,7 +62,7 @@
                 </asp:TemplateField>
             </Columns>
             <EmptyDataTemplate>
-                whatever message string you use is printed if there is no data to display
+                no data to display
             </EmptyDataTemplate>
             <PagerSettings FirstPageText="Start" LastPageText="End" Mode="NumericFirstLast" PageButtonCount="3" />
         </asp:GridView>
