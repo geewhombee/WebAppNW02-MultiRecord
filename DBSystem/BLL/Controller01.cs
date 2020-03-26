@@ -19,5 +19,12 @@ namespace DBSystem.BLL
                 return context.Entity03s.ToList();
             }
         }
+        public Entity03 FindByID(int id)
+        {
+            using (var context = new Context())
+            {
+                return context.Entity03s.Find(id);
+            }
+        }
     }
 }

@@ -49,6 +49,33 @@ namespace WebApp.ExercisePages {
         protected global::System.Web.UI.WebControls.Label Coach;
         
         /// <summary>
+        /// AssistCoach control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label AssistCoach;
+        
+        /// <summary>
+        /// Wins control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Wins;
+        
+        /// <summary>
+        /// Losses control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Losses;
+        
+        /// <summary>
         /// MessageLabel control.
         /// </summary>
         /// <remarks>

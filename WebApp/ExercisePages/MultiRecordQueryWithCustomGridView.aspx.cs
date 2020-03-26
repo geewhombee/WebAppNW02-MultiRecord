@@ -53,11 +53,18 @@ namespace WebApp.ExercisePages
                 {
                  
                     Controller02 sysmgr = new Controller02();
+                    Controller01 sysmgr2 = new Controller01();
                     List<Entity02> info = null;
+                    Entity03 SearchEntity = sysmgr2.FindByID(int.Parse(List01.SelectedValue));
                     info = sysmgr.FindByID(int.Parse(List01.SelectedValue));
+                    
                     info.Sort((x, y) => x.LastName.CompareTo(y.LastName));
                     List02.DataSource = info;
                     List02.DataBind();
+                    Coach.Text = SearchEntity.Coach.ToString();
+                    AssistCoach.Text = SearchEntity.AssistantCoach.ToString();
+                    Wins.Text = SearchEntity.Wins.ToString();
+                    Losses.Text = SearchEntity.Losses.ToString();
                     
                 }
                 catch (Exception ex)
