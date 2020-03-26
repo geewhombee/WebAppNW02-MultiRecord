@@ -7,7 +7,6 @@
         <asp:Button ID="Fetch" runat="server" Text="Fetch" 
              CausesValidation="false" OnClick="Fetch_Click"/>
         <br /><br />
-
         <br />
         <asp:Label ID="MessageLabel" runat="server" ></asp:Label>
         <br />
@@ -19,17 +18,7 @@
             OnSelectedIndexChanged="List02_SelectedIndexChanged">
 
             <Columns>
-                <asp:CommandField SelectText="View" ShowSelectButton="True" 
-                    ButtonType="Button" CausesValidation="false">
-                </asp:CommandField>
-                <asp:TemplateField HeaderText="ID" Visible="True">
-                    <ItemStyle HorizontalAlign="Left"></ItemStyle>
-                    <ItemTemplate>
-                        <asp:Label ID="PlayerID" runat="server" 
-                            Text='<%# Eval("PlayerID") %>'>
-                        </asp:Label>
-                    </ItemTemplate>
-                </asp:TemplateField>
+                
                 <asp:TemplateField HeaderText="Name">
                     <ItemStyle HorizontalAlign="Left"></ItemStyle>
                     <ItemTemplate>
