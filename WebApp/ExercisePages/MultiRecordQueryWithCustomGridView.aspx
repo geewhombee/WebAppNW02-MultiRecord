@@ -28,7 +28,7 @@
             AutoGenerateColumns="False"
             CssClass="table table-striped" GridLines="Horizontal"
             BorderStyle="None" AllowPaging="True"
-            OnPageIndexChanging="List02_PageIndexChanging" PageSize="10"
+            OnPageIndexChanging="List02_PageIndexChanging" PageSize="5"
             OnSelectedIndexChanged="List02_SelectedIndexChanged">
 
             <Columns>
