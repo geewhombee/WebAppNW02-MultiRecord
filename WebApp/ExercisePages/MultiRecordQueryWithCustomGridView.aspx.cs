@@ -25,12 +25,12 @@ namespace WebApp.ExercisePages
             try
             {
                 Controller01 sysmgr = new Controller01();
-                List<Entity01> info = null;
+                List<Entity03> info = null;
                 info = sysmgr.List();
-                info.Sort((x, y) => x.CategoryName.CompareTo(y.CategoryName));
+                info.Sort((x, y) => x.TeamName.CompareTo(y.TeamName));
                 List01.DataSource = info;
-                List01.DataTextField = nameof(Entity01.CategoryName);
-                List01.DataValueField = nameof(Entity01.CategoryID);
+                List01.DataTextField = nameof(Entity03.TeamName);
+                List01.DataValueField = nameof(Entity03.TeamID);
                 List01.DataBind();
                 List01.Items.Insert(0, "select...");
             }
@@ -43,7 +43,7 @@ namespace WebApp.ExercisePages
         {
             if (List01.SelectedIndex == 0)
             {
-                MessageLabel.Text = "Select a category to view its products";
+                MessageLabel.Text = "Select a Team to view its information";
             }
             else
             {
@@ -52,13 +52,13 @@ namespace WebApp.ExercisePages
                     Controller02 sysmgr = new Controller02();
                     List<Entity02> info = null;
                     info = sysmgr.FindByID(int.Parse(List01.SelectedValue));
-                    info.Sort((x, y) => x.ProductName.CompareTo(y.ProductName));
+                    info.Sort((x, y) => x.LastName.CompareTo(y.LastName));
                     List02.DataSource = info;
                     List02.DataBind();
                 }
                 catch (Exception ex)
                 {
-                    MessageLabel.Text = ex.Message;
+                    MessageLabel.Text = ex.Message + "Test";
                 }
             }
         }
@@ -70,8 +70,8 @@ namespace WebApp.ExercisePages
         protected void List02_SelectedIndexChanged(object sender, EventArgs e)
         {
             GridViewRow agvrow = List02.Rows[List02.SelectedIndex];
-            string productid = (agvrow.FindControl("ProductID") as Label).Text;
-            Response.Redirect("ReceivingPage.aspx?pid=" + productid);
+            string playerid = (agvrow.FindControl("PlayerID") as Label).Text;
+            Response.Redirect("ReceivingPage.aspx?pid=" + playerid);
         }
     }
 }

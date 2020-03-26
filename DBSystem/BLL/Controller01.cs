@@ -12,11 +12,11 @@ namespace DBSystem.BLL
 {
     public class Controller01 //Category
     {
-        public List<Entity01> List()
+        public List<Entity03> List()
         {
             using (var context = new Context())
             {
-                return context.Entity01s.ToList();
+                return context.Entity03s.ToList();
             }
         }
     }

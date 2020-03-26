@@ -9,23 +9,15 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DBSystem.ENTITIES
 {
-    [Table("Suppliers")]
+    [Table("Team")]
     public class Entity03
     {
         [Key]
-        public int SupplierID { get; set; }
-        public string CompanyName { get; set; }
-        public string Address { get; set; }
-        public string City { get; set; }
-        public string PostalCode { get; set; }
-
-        [NotMapped]
-        public string CompanyAddress
-        {
-            get
-            {
-                return Address + " " + City + " " + PostalCode;
-            }
-        }
+        public int TeamID { get; set; }
+        public string TeamName { get; set; }
+        public string Coach { get; set; }
+        public string AssistantCoach { get; set; }
+        public int? Wins { get; set; }
+        public int? Losses { get; set; }
     }
 }
