@@ -10,6 +10,7 @@
         <br />
         <asp:Label ID="MessageLabel" runat="server" ></asp:Label>
         <br />
+        <h2>Team Roster</h2>
         <asp:GridView ID="List02" runat="server" 
             AutoGenerateColumns="False"
             CssClass="table table-striped" GridLines="Horizontal"
