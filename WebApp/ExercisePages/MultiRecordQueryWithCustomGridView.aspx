@@ -7,6 +7,11 @@
         <asp:Button ID="Fetch" runat="server" Text="Fetch" 
              CausesValidation="false" OnClick="Fetch_Click"/>
         <br /><br />
+        <div class="col-md-6">
+            <asp:Label runat="server" Text="Coach:"></asp:Label>&nbsp;&nbsp;
+            <asp:Label id="Coach" runat="server" ></asp:Label>
+            <br />
+        </div>
         <br />
         <asp:Label ID="MessageLabel" runat="server" ></asp:Label>
         <br />

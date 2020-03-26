@@ -33,6 +33,7 @@ namespace WebApp.ExercisePages
                 List01.DataValueField = nameof(Entity03.TeamID);
                 List01.DataBind();
                 List01.Items.Insert(0, "select...");
+                
             }
             catch (Exception ex)
             {
@@ -47,14 +48,17 @@ namespace WebApp.ExercisePages
             }
             else
             {
+                
                 try
                 {
+                 
                     Controller02 sysmgr = new Controller02();
                     List<Entity02> info = null;
                     info = sysmgr.FindByID(int.Parse(List01.SelectedValue));
                     info.Sort((x, y) => x.LastName.CompareTo(y.LastName));
                     List02.DataSource = info;
                     List02.DataBind();
+                    
                 }
                 catch (Exception ex)
                 {

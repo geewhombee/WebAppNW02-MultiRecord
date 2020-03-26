@@ -10,7 +10,7 @@ using DBSystem.ENTITIES;
 
 namespace DBSystem.BLL
 {
-    public class Controller02 //Product
+    public class Controller02 //Player
     {
         public List<Entity02> FindByID(int id)
         {

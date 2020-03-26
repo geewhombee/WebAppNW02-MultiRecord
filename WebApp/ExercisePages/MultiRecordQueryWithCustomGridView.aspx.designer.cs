@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApp.ExercisePages
-{
-
-
-    public partial class MultiRecordQueryWithCustomGridView
-    {
-
+namespace WebApp.ExercisePages {
+    
+    
+    public partial class MultiRecordQueryWithCustomGridView {
+        
         /// <summary>
         /// Label1 control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace WebApp.ExercisePages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
-
+        
         /// <summary>
         /// List01 control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace WebApp.ExercisePages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList List01;
-
+        
         /// <summary>
         /// Fetch control.
         /// </summary>
@@ -40,7 +38,16 @@ namespace WebApp.ExercisePages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Fetch;
-
+        
+        /// <summary>
+        /// Coach control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Coach;
+        
         /// <summary>
         /// MessageLabel control.
         /// </summary>
@@ -49,7 +56,7 @@ namespace WebApp.ExercisePages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label MessageLabel;
-
+        
         /// <summary>
         /// List02 control.
         /// </summary>
