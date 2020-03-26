@@ -69,7 +69,7 @@
                                     <a class="dropdown-item"
                                             href="~/ExercisePages/MultiRecordQueryWithCustomGridView.aspx"
                                             style="color:black" runat="server">
-                                            Multi Record Query with Custom GridView
+                                            Ex06
                                     </a>
                                     
                                 </div>
