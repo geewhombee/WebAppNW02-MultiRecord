@@ -22,5 +22,12 @@ namespace DBSystem.BLL
                 return results.ToList();
             }
         }
+        public List<Entity02> List()
+        {
+            using (var context = new Context())
+            {
+                return context.Entity02s.ToList();
+            }
+        }
     }
 }
