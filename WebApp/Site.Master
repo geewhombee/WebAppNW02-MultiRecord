@@ -71,6 +71,11 @@
                                             style="color:black" runat="server">
                                             Ex06
                                     </a>
+                                    <a class="dropdown-item"
+                                            href="~/ExercisePages/Ex09and10.aspx"
+                                            style="color:black" runat="server">
+                                            Ex09 & 10
+                                    </a>
                                     
                                 </div>
                             </li>

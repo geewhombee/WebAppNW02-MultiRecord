@@ -127,6 +127,7 @@
     <Content Include="Default.aspx" />
     <Content Include="ExercisePages\ReceivingPage.aspx" />
     <Content Include="ExercisePages\MultiRecordQueryWithCustomGridView.aspx" />
+    <Content Include="ExercisePages\Ex09and10.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -310,6 +311,13 @@
     </Compile>
     <Compile Include="ExercisePages\MultiRecordQueryWithCustomGridView.aspx.designer.cs">
       <DependentUpon>MultiRecordQueryWithCustomGridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExercisePages\Ex09and10.aspx.cs">
+      <DependentUpon>Ex09and10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExercisePages\Ex09and10.aspx.designer.cs">
+      <DependentUpon>Ex09and10.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
