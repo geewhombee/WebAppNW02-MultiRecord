@@ -20,5 +20,12 @@ namespace DBSystem.ENTITIES
         public string EmailAddress { get; set; }
         //public byte[] Picture { get; set; }
         //public string PictureMimeType { get; set; }
+        public string FullName
+        {
+            get
+            {
+                return LastName + "," + FirstName;
+            }
+        }
     }
 }

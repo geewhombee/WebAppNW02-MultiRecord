@@ -14,8 +14,8 @@ namespace DBSystem.ENTITIES
     {
         [Key]
         public int PlayerID { get; set; }
-        public int GuardianID { get; set; }
-        public int TeamID { get; set; }
+        public int? GuardianID { get; set; }
+        public int? TeamID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int Age { get; set; }
